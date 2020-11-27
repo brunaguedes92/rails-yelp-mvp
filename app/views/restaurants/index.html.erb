@@ -1,0 +1,13 @@
+<p id="notice"><%= notice %></p>
+
+<ul>
+  <% @restaurants.each do |restaurant| %>
+    <li><%= restaurant.name %></li>
+    <li><%= restaurant.address %></li>
+    <li><%= restaurant.phone_number %></li>
+    <li><%= restaurant.category %></li>
+    <li><%= link_to 'Show', restaurant %></li>
+  <% end %>
+</ul>
+<%= link_to 'New Restaurant', new_restaurant_path %>
+
